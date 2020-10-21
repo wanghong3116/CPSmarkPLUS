@@ -1,0 +1,182 @@
+#ifndef _ENUM_H_EE2906BE_52CF_4D2A_B1B9_B1EE6726B912
+#define _ENUM_H_EE2906BE_52CF_4D2A_B1B9_B1EE6726B912
+
+#include "PlatformDefine.h"
+namespace MyPlatform
+{
+
+
+enum E_BookType
+{
+	E_BT_BEG,
+	
+	E_BT_EPUB = E_BT_BEG,
+	E_BT_PDG,
+	E_BT_PDF,
+
+	E_BT_END
+};
+
+enum E_PaperInfo
+{
+	E_PI_BEG,
+
+	E_PI_SERIAL_NUMBER = E_PI_BEG,	/// 序列号
+
+	E_PI_RECATTR,					/// 
+	E_PI_FILENAME,					/// 文件名
+	E_PI_TITLE,						/// 篇名
+	E_PI_JOURPAGE,					/// 印刷页码
+	E_PI_DOCUCODE,					/// 文献标识码+栏目
+	E_PI_ARTICLEID,					/// 文章编号
+	E_PI_LANGUAGE,					/// 语种
+	E_PI_PAGES,						/// 物理页码
+	E_PI_CLASSFYNO,					/// 分类号
+	E_PI_AUTHOR,					/// 作者和机构
+	E_PI_ABSTRACT,					/// 中文摘要
+	E_PI_KEYWORD,					/// 中文关键词
+	E_PI_FTXT,						/// 正文
+	E_PI_REFERENCE,					/// 参考文献
+	E_PI_REFPAGE,					/// 参考文献页码
+	E_PI_FUND,						/// 基金
+	E_PI_SGRQ,						/// 收稿日期
+	E_PI_AUINFOR,					/// 作者简介
+	E_PI_ETITLE,					/// 英文篇名
+	E_PI_EAUTHOR,					/// 英文作者机构
+	E_PI_EABSTRACT,					/// 英文摘要
+	E_PI_EKEYWORD,					/// 英文关键词
+	E_PI_ECONTENT,					/// 英文目录
+	E_PI_EABSPAGE,					/// 英文摘要页码
+
+	E_PI_END
+};
+
+
+enum ECheckFileType
+{
+	E_CHECK_FILE_TYPE_BEG,
+
+	E_CFT_AI = E_CHECK_FILE_TYPE_BEG,
+	E_CFT_PDF,
+	E_CFT_JPG,
+	E_CFT_PSD,
+	E_CFT_CDR,
+
+	E_CHECK_FILE_TYPE_END
+};
+
+enum EAiCheckTable
+{
+	E_AI_CHECK_TABLE_BEG,
+
+	E_AI_INDEX = E_AI_CHECK_TABLE_BEG,
+	E_AI_FILE_NAME,
+
+	E_AI_SIZE,
+	E_AI_NO_HEIGH_VERSION,
+	E_AI_SINGLE_BLACK,
+	E_AI_INK_HEIGH,
+	E_AI_TEXT_TO_PATH,
+	E_AI_NO_LOST_IMG,
+	E_AI_CMYK,
+	E_AI_ONE_LAYER,
+	E_AI_OPACITY,
+	E_AI_NO_SPOT_COLOR,
+
+	E_AI_CHECK_TABLE_END
+};
+
+enum EPdfCheckTable
+{
+	E_PDF_CHECK_TABLE_BEG,
+
+	E_PDF_INDEX = E_PDF_CHECK_TABLE_BEG,
+	E_PDF_FILE_NAME,
+
+	E_PDF_SIZE,
+	E_PDF_SINGLE_BLACK,
+	E_PDF_INK_HEIGH,
+	E_PDF_ONE_LAYER,
+	E_PDF_OPACITY,
+	E_PDF_CMYK,
+	E_PDF_FONT_EMBED,
+	E_PDF_NO_SPOT_COLOR,
+
+	E_PDF_CHECK_TABLE_END
+
+};
+
+enum EJpgCheckTable
+{
+	E_JPG_CHECK_TABLE_BEG,
+
+	E_JPG_INDEX = E_JPG_CHECK_TABLE_BEG,
+	E_JPG_FILE_NAME,
+
+	E_JPG_SIZE,
+	E_JPG_PPI,
+	E_JPG_INK_HEIGH,
+	E_JPG_CMYK,
+	E_JPG_SPOT_COLOR,
+
+	E_JPG_CHECK_TABLE_END
+};
+
+enum EPSDCheckTable
+{
+	E_PSD_CHECK_TABLE_BEG,
+
+	E_PSD_INDEX = E_PSD_CHECK_TABLE_BEG,
+	E_PSD_FILE_NAME,
+
+	E_PSD_SIZE,
+	E_PSD_PPI,
+	E_PSD_SINGLE_BLACK,
+	E_PSD_INK_HEIGH,
+	E_PSD_ONE_LAYER,
+	E_PSD_OPACITY,
+	E_PSD_CMYK,
+	E_PSD_NO_LOST_LINK,
+	E_PSD_TEXT_TO_PATH,
+	E_PSD_NO_SPOT_COLOR,
+
+	E_PSD_CHECK_TABLE_END
+};
+
+enum ECDRCheckTable
+{
+	E_CDR_CHECK_TABLE_BEG,
+
+	E_CDR_INDEX = E_CDR_CHECK_TABLE_BEG,
+	E_CDR_FILE_NAME,
+
+	E_CDR_SIZE,
+	E_CDR_SINGLE_BLACK,
+	E_CDR_NO_INK_HEIGH,
+	E_CDR_ONE_LAYER,
+	E_CDR_OPACITY,
+	E_CDR_CMYK,
+	E_CDR_TEXT_TO_PATH,
+	E_CDR_IMAGE_EMBED,
+	E_CDR_NO_SPOT_COLOR,
+
+	E_CDR_CHECK_TABLE_END
+};
+
+enum E_Message
+{
+	E_MSG_BEG = WM_USER,
+
+	E_MSG_CHECK_OVER,				/// 检查结束	wParam-执行结果状态，
+	//E_MSG_AI_CHECK_ONE_OVER,
+	//E_MSG_PDF_CHECK_ONE_OVER,
+	
+
+	E_MSG_END
+};
+
+};
+
+#endif
+
+

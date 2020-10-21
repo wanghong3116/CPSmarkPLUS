@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window size="690,280" maxinfo="690,280" >
+	<Font shared="true" id="1" name="幼圆" size="23" default="true" bold="true" />
+	<Font shared="true" id="2" name="幼圆" size="35" default="true" bold="true" />
+	<Font shared="true" id="3" name="幼圆" size="36" default="true" bold="true"/>
+	<Font shared="true" id="4" name="幼圆" size="12" default="true" bold="true"/>
+	<VerticalLayout >
+		
+		<VerticalLayout name="StaticDisplay" bkimage="main\Main_background.bmp" visible="true" >
+			<HorizontalLayout pos="0,0,516,155" padding="85,60,0,0">
+				<Option name="optionOffice" pos="0,0,129,155" padding="129,0,0,0" selected="true" selectedimage="itemPage\option_main_item_office_select.bmp" normalimage="itemPage\option_main_item_office_normal.bmp" />
+				<!--
+				<Option name="optionNet" pos="0,0,129,155" selected="true" selectedimage="itemPage\option_main_item_net_select.bmp" normalimage="itemPage\option_main_item_net_normal.bmp" />	
+				-->
+				<Option name="optionMedia" pos="0,0,129,155" padding="0,0,0,0" selected="true" selectedimage="itemPage\option_main_item_media_select.bmp" normalimage="itemPage\option_main_item_media_normal.bmp" />
+				<!--
+				<Option name="optionStorage" pos="0,0,129,155" selected="true" selectedimage="itemPage\option_main_item_IO_select.bmp" normalimage="itemPage\option_main_item_IO_normal.bmp" />
+				-->
+			</HorizontalLayout>
+			
+			<HorizontalLayout pos="0,0,516,33" padding="0,10,0,0">
+				<Button name="buttonItemWork" pos="0,0,97,33" padding="207,0,0,0" normalimage="main\button_main_item_work_normal.bmp" />
+				<Button name="buttonMainExit" pos="0,0,97,33" padding="20,0,0,0" normalimage="main\button_main_close_normal.bmp" />
+			</HorizontalLayout>
+			
+			
+		</VerticalLayout>
+		
+
+		<VerticalLayout pos="0,0,473,120" name="RunningMonitor" bkimage="file='Monitor_bg.bmp' " visible="false" >
+			<HorizontalLayout pos="0,0,473,33" padding="0,62,0,0" >
+				<Button name="buttonRunItemIndex" text="1" pos="0,0,30,33"  font="1" padding="20,0,0,0" textcolor="0xffffffff" font="1" />
+				<Button name="buttonRunItemCount" text="15" pos="0,0,30,33"  font="1" padding="10,0,0,0" textcolor="0xffffffff" font="1" />
+				<Button name="buttonMarkTypeName" text="办公测试" textcolor="0xffffffff" font="1" align="left" pos="0,0,253,25" padding="120,0,0,0" />
+			</HorizontalLayout>
+			<Button name="buttonMonitorExit" pos="0,0,56,23" padding="417,0,0,0" normalimage="Monitor_exit.bmp" />
+			<Progress visible="false" name="progressMarkWork" pos="0,0,321,6" padding="15,10,0,10" bkimage="file='Monitor_work_bg.png' " foreimage="Monitor_work_progress.png" width="321" height="6" min="0" max="100" value="50" />
+			<Text name="textCPUUtilization" padding="120,0,0,0" font="1" text="CPU使用率" textcolor="0xFFFFFFFF" visible="false" />
+			<	Text name="textCurrentWrokName" padding="120,5,0,0" font="3" text="当前操作为：" textcolor="0xFFFFFFFF" />
+		</VerticalLayout>
+		
+	</VerticalLayout>
+</Window>

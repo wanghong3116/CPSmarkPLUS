@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="platform">
+      <UniqueIdentifier>{decb7c3e-7297-4e3e-ab50-d7864f931d53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Install">
+      <UniqueIdentifier>{ba336f99-5efd-4241-87ed-867a357bf097}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Setting">
+      <UniqueIdentifier>{6fad6f95-a7fe-427d-a46e-d33ccbdba428}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third">
+      <UniqueIdentifier>{910b83f5-aaf8-497f-91a3-0a353a142033}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third\mark">
+      <UniqueIdentifier>{4400cd76-4076-4548-be0a-10631f6789d9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="platform\CIni.h">
+      <Filter>platform</Filter>
+    </ClInclude>
+    <ClInclude Include="platform\InformationTrace.h">
+      <Filter>platform</Filter>
+    </ClInclude>
+    <ClInclude Include="platform\MyAlgorithm.h">
+      <Filter>platform</Filter>
+    </ClInclude>
+    <ClInclude Include="platform\PlatformDefine.h">
+      <Filter>platform</Filter>
+    </ClInclude>
+    <ClInclude Include="platform\PlatformEnum.h">
+      <Filter>platform</Filter>
+    </ClInclude>
+    <ClInclude Include="platform\PlatformGlobalFunc.h">
+      <Filter>platform</Filter>
+    </ClInclude>
+    <ClInclude Include="platform\PlatformHeader.h">
+      <Filter>platform</Filter>
+    </ClInclude>
+    <ClInclude Include="platform\PlatformStruct.h">
+      <Filter>platform</Filter>
+    </ClInclude>
+    <ClInclude Include="platform\PlatromPaint.h">
+      <Filter>platform</Filter>
+    </ClInclude>
+    <ClInclude Include="platform\ThreadPacket.h">
+      <Filter>platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Install\InstallPr.h">
+      <Filter>Install</Filter>
+    </ClInclude>
+    <ClInclude Include="Install\InstallAE.h">
+      <Filter>Install</Filter>
+    </ClInclude>
+    <ClInclude Include="Install\InstallObject.h">
+      <Filter>Install</Filter>
+    </ClInclude>
+    <ClInclude Include="Install\InstallPS.h">
+      <Filter>Install</Filter>
+    </ClInclude>
+    <ClInclude Include="Install\InstallAcrobat.h">
+      <Filter>Install</Filter>
+    </ClInclude>
+    <ClInclude Include="Install\InstallCAD.h">
+      <Filter>Install</Filter>
+    </ClInclude>
+    <ClInclude Include="Install\InstallAutodesk.h">
+      <Filter>Install</Filter>
+    </ClInclude>
+    <ClInclude Include="Install\InstallDMax.h">
+      <Filter>Install</Filter>
+    </ClInclude>
+    <ClInclude Include="Setting\OutlookSetting.h">
+      <Filter>Setting</Filter>
+    </ClInclude>
+    <ClInclude Include="Install\InstallOffice.h">
+      <Filter>Install</Filter>
+    </ClInclude>
+    <ClInclude Include="Setting\DMaxSetting.h">
+      <Filter>Setting</Filter>
+    </ClInclude>
+    <ClInclude Include="Setting\AutoDeskSetting.h">
+      <Filter>Setting</Filter>
+    </ClInclude>
+    <ClInclude Include="Setting\CADSetting.h">
+      <Filter>Setting</Filter>
+    </ClInclude>
+    <ClInclude Include="Setting\SettingObject.h">
+      <Filter>Setting</Filter>
+    </ClInclude>
+    <ClInclude Include="mark\OfficeRegisterWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WinrarSetting.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Install\InstallWinrar.h">
+      <Filter>Install</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoSetupSoftware.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="platform\CIni.cpp">
+      <Filter>platform</Filter>
+    </ClCompile>
+    <ClCompile Include="platform\InformationTrace.cpp">
+      <Filter>platform</Filter>
+    </ClCompile>
+    <ClCompile Include="platform\MyDownload.cpp">
+      <Filter>platform</Filter>
+    </ClCompile>
+    <ClCompile Include="platform\PlatformGlobalFunc.cpp">
+      <Filter>platform</Filter>
+    </ClCompile>
+    <ClCompile Include="platform\PlatromPaint.cpp">
+      <Filter>platform</Filter>
+    </ClCompile>
+    <ClCompile Include="Install\InstallPr.cpp">
+      <Filter>Install</Filter>
+    </ClCompile>
+    <ClCompile Include="Install\InstallAE.cpp">
+      <Filter>Install</Filter>
+    </ClCompile>
+    <ClCompile Include="Install\InstallObject.cpp">
+      <Filter>Install</Filter>
+    </ClCompile>
+    <ClCompile Include="Install\InstallPS.cpp">
+      <Filter>Install</Filter>
+    </ClCompile>
+    <ClCompile Include="Install\InstallAcrobat.cpp">
+      <Filter>Install</Filter>
+    </ClCompile>
+    <ClCompile Include="Install\InstallCAD.cpp">
+      <Filter>Install</Filter>
+    </ClCompile>
+    <ClCompile Include="Install\InstallAutodesk.cpp">
+      <Filter>Install</Filter>
+    </ClCompile>
+    <ClCompile Include="Install\InstallDMax.cpp">
+      <Filter>Install</Filter>
+    </ClCompile>
+    <ClCompile Include="Setting\OutlookSetting.cpp">
+      <Filter>Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="Install\InstallOffice.cpp">
+      <Filter>Install</Filter>
+    </ClCompile>
+    <ClCompile Include="Setting\DMaxSetting.cpp">
+      <Filter>Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="Setting\AutoDeskSetting.cpp">
+      <Filter>Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="Setting\CADSetting.cpp">
+      <Filter>Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="Setting\SettingObject.cpp">
+      <Filter>Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="mark\OfficeRegisterWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Install\InstallWinrar.cpp">
+      <Filter>Install</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+</Project>

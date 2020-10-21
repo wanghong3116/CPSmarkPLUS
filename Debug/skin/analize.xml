@@ -1,0 +1,41 @@
+﻿
+			
+		
+			
+		
+		
+				
+
+					<VerticalLayout pos="0,0,100,200", padding="0,35,0,0">
+							<HorizontalLayout pos="0,0,100,165"  >
+								<Progress min="0" max="165" value="60" bkimage="progress_analyze_measure.png" />
+								<Progress min="0" max="165" value="60" bkimage="progress_analyze_stand.png" />
+							</HorizontalLayout>
+							<Button text="办公"/>
+						 </VerticalLayout>
+						<VerticalLayout pos="0,0,100,200", padding="0,35,0,0">
+							<HorizontalLayout pos="0,0,100,165"  >
+								<Progress min="0" max="165" value="60" bkimage="progress_analyze_measure.png" />
+								<Progress min="0" max="165" value="60" bkimage="progress_analyze_stand.png" />
+							</HorizontalLayout>
+							<Button text="网络"/>
+						</VerticalLayout>
+						<VerticalLayout pos="0,0,100,200", padding="0,35,0,0">
+							<HorizontalLayout pos="0,0,100,165"  >
+								<Progress min="0" max="165" value="60" bkimage="progress_analyze_measure.png" />
+								<Progress min="0" max="165" value="60" bkimage="progress_analyze_stand.png" />
+							</HorizontalLayout>
+							<Button text="OPENCL"/>
+						</VerticalLayout>
+	
+						
+						
+					
+					
+			
+				
+
+				
+			
+			
+			

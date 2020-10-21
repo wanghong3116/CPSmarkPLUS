@@ -1,0 +1,2 @@
+This directory is the new location for the data set files. As the GitHub file size restriction prevents check in of files over a certain size,
+the files have not been checked in here. Please copy the working data sets to this location prior to attempting to run this build of CPSMark.

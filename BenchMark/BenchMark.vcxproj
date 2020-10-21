@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8576D9B9-0546-4584-8E37-0226F9E003C1}</ProjectGuid>
+    <RootNamespace>BenchMark</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>MFCProj</Keyword>
+    <ProjectName>CPSMark</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>.\UI;.\;.\platform;.\mark;.\DataType;.\mark\Photoshop;.\mark\AutoItx;.\mark\MarkFrame\include;.\mark\md5</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>.\mark\AutoItx;mark\MarkFrame\Debug;.\mark\md5\Debug</AdditionalLibraryDirectories>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <AdditionalDependencies>AlMD5Verifyd.lib;AutoItX3_DLL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>xcopy /I /E /Y /D /C "$(ProjectDir)\mark\md5\$(Configuration)" "$(OutDir)"
+xcopy /I /E /Y /D /C "$(ProjectDir)\mark\MarkFrame\$(Configuration)\MarkFrame.dll" "$(OutDir)"
+xcopy /I /E /Y /D /C "$(ProjectDir)\mark\AutoItx\AutoItX3.dll" "$(OutDir)"
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>.\UI;.\;.\platform;.\mark;.\DataType;.\mark\Photoshop;.\mark\AutoItx;.\mark\MarkFrame\include;.\mark\md5</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>.\mark\AutoItx;mark\MarkFrame\Release;.\mark\md5\Release</AdditionalLibraryDirectories>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <AdditionalDependencies>AlMD5Verify.lib;AutoItX3_DLL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>xcopy /I /E /Y /D /C "$(ProjectDir)\mark\md5\$(Configuration)" "$(OutDir)"
+xcopy /I /E /Y /D /C "$(ProjectDir)\mark\MarkFrame\$(Configuration)\MarkFrame.dll" "$(OutDir)"
+xcopy /I /E /Y /D /C "$(ProjectDir)\mark\AutoItx\AutoItX3.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BenchMark.h" />
+    <ClInclude Include="BenchMarkDlg.h" />
+    <ClInclude Include="DataType\BenchMarkDefine.h" />
+    <ClInclude Include="DataType\BenchMarkEnum.h" />
+    <ClInclude Include="DataType\BenchMarkStruct.h" />
+    <ClInclude Include="mark\3DSMax.h" />
+    <ClInclude Include="mark\3DSMaxWhale.h" />
+    <ClInclude Include="mark\3DSMaxWhale_Opids.h" />
+    <ClInclude Include="mark\AdobeRegisterWindow.h" />
+    <ClInclude Include="mark\AEMark.h" />
+    <ClInclude Include="mark\AE_Opids.h" />
+    <ClInclude Include="mark\AutoCADMark.h" />
+    <ClInclude Include="mark\AutoCAD_Opids.h" />
+    <ClInclude Include="mark\ChromeMark.h" />
+    <ClInclude Include="mark\Chrome_Opids.h" />
+    <ClInclude Include="mark\CounterContent.h" />
+    <ClInclude Include="mark\Excel_Opids.h" />
+    <ClInclude Include="mark\HandBrake.h" />
+    <ClInclude Include="mark\HandBrake_Opids.h" />
+    <ClInclude Include="mark\MarkObject.h" />
+    <ClInclude Include="mark\OfficeExcelMark.h" />
+    <ClInclude Include="mark\OfficePowerPointMark.h" />
+    <ClInclude Include="mark\OfficeRegisterWindow.h" />
+    <ClInclude Include="mark\OfficeWordMark.h" />
+    <ClInclude Include="mark\Opids.h" />
+    <ClInclude Include="mark\OutlookMark.h" />
+    <ClInclude Include="mark\Outlook_Opids.h" />
+    <ClInclude Include="mark\PDFMark.h" />
+    <ClInclude Include="mark\PDF_Opids.h" />
+    <ClInclude Include="mark\Photoshop.h" />
+    <ClInclude Include="mark\PhotoShop_Opids.h" />
+    <ClInclude Include="mark\PPT_Opids.h" />
+    <ClInclude Include="mark\PremiereMark.h" />
+    <ClInclude Include="mark\Premiere_Opids.h" />
+    <ClInclude Include="mark\ResultReport.h" />
+    <ClInclude Include="mark\WinrarZipMark.h" />
+    <ClInclude Include="mark\Winrar_Opids.h" />
+    <ClInclude Include="mark\Word_Opids.h" />
+    <ClInclude Include="platform\CIni.h" />
+    <ClInclude Include="platform\InformationTrace.h" />
+    <ClInclude Include="platform\MyAlgorithm.h" />
+    <ClInclude Include="platform\PlatformDefine.h" />
+    <ClInclude Include="platform\PlatformEnum.h" />
+    <ClInclude Include="platform\PlatformGlobalFunc.h" />
+    <ClInclude Include="platform\PlatformHeader.h" />
+    <ClInclude Include="platform\PlatformStruct.h" />
+    <ClInclude Include="platform\PlatromPaint.h" />
+    <ClInclude Include="platform\ThreadPacket.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="UI\MainTabUI.h" />
+    <ClInclude Include="UI\ResourceVerify.h" />
+    <ClInclude Include="UI\ResultDetailUI.h" />
+    <ClInclude Include="UI\WorkMark.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BenchMark.cpp" />
+    <ClCompile Include="BenchMarkDlg.cpp" />
+    <ClCompile Include="mark\3DSMax.cpp" />
+    <ClCompile Include="mark\3DSMaxWhale.cpp" />
+    <ClCompile Include="mark\3DSMaxWhale_Opids.cpp" />
+    <ClCompile Include="mark\AdobeRegisterWindow.cpp" />
+    <ClCompile Include="mark\AEMark.cpp" />
+    <ClCompile Include="mark\AE_Opids.cpp" />
+    <ClCompile Include="mark\AutoCADMark.cpp" />
+    <ClCompile Include="mark\AutoCAD_Opids.cpp" />
+    <ClCompile Include="mark\ChromeMark.cpp" />
+    <ClCompile Include="mark\Chrome_Opids.cpp" />
+    <ClCompile Include="mark\CounterContent.cpp" />
+    <ClCompile Include="mark\Excel_Opids.cpp" />
+    <ClCompile Include="mark\HandBrake.cpp" />
+    <ClCompile Include="mark\HandBrake_Opids.cpp" />
+    <ClCompile Include="mark\MarkObject.cpp" />
+    <ClCompile Include="mark\OfficeExcelMark.cpp" />
+    <ClCompile Include="mark\OfficePowerPointMark.cpp" />
+    <ClCompile Include="mark\OfficeRegisterWindow.cpp" />
+    <ClCompile Include="mark\OfficeWordMark.cpp" />
+    <ClCompile Include="mark\Opids.cpp" />
+    <ClCompile Include="mark\OutlookMark.cpp" />
+    <ClCompile Include="mark\Outlook_Opids.cpp" />
+    <ClCompile Include="mark\PDFMark.cpp" />
+    <ClCompile Include="mark\PDF_Opids.cpp" />
+    <ClCompile Include="mark\Photoshop.cpp" />
+    <ClCompile Include="mark\PhotoShop_Opids.cpp" />
+    <ClCompile Include="mark\PPT_Opids.cpp" />
+    <ClCompile Include="mark\PremiereMark.cpp" />
+    <ClCompile Include="mark\Premiere_Opids.cpp" />
+    <ClCompile Include="mark\ResultReport.cpp" />
+    <ClCompile Include="mark\WinrarZipMark.cpp" />
+    <ClCompile Include="mark\Winrar_Opids.cpp" />
+    <ClCompile Include="mark\Word_Opids.cpp" />
+    <ClCompile Include="platform\CIni.cpp" />
+    <ClCompile Include="platform\InformationTrace.cpp" />
+    <ClCompile Include="platform\MyDownload.cpp" />
+    <ClCompile Include="platform\PlatformGlobalFunc.cpp" />
+    <ClCompile Include="platform\PlatromPaint.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UI\ComputerInformation.cpp" />
+    <ClCompile Include="UI\MainTabUI.cpp" />
+    <ClCompile Include="UI\ResourceVerify.cpp" />
+    <ClCompile Include="UI\ResultDetailUI.cpp" />
+    <ClCompile Include="UI\WorkMark.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="BenchMark.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\BenchMark.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\BenchMark.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DuiLib\DuiLib.vcxproj">
+      <Project>{e106acd7-4e53-4aee-942b-d0dd426db34e}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="BenchMark.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

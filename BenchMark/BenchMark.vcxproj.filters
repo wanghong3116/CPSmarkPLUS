@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{4f54a8b3-55cd-4430-beed-18b21359abd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{c636c846-e7e7-4762-a6de-4cfb1430c99c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mark">
+      <UniqueIdentifier>{506f43c6-c788-4899-bfef-66fbec239870}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataType">
+      <UniqueIdentifier>{0adea2c4-4bbb-4c7a-9dd7-5af8776a63b5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="platform\CIni.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="platform\InformationTrace.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="platform\MyAlgorithm.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="platform\PlatformDefine.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="platform\PlatformEnum.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="platform\PlatformGlobalFunc.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="platform\PlatformHeader.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="platform\PlatformStruct.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="platform\PlatromPaint.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="platform\ThreadPacket.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="BenchMark.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="BenchMarkDlg.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="mark\MarkObject.h">
+      <Filter>Mark</Filter>
+    </ClInclude>
+    <ClInclude Include="mark\HandBrake.h">
+      <Filter>Mark</Filter>
+    </ClInclude>
+    <ClInclude Include="DataType\BenchMarkDefine.h">
+      <Filter>DataType</Filter>
+    </ClInclude>
+    <ClInclude Include="DataType\BenchMarkEnum.h">
+      <Filter>DataType</Filter>
+    </ClInclude>
+    <ClInclude Include="mark\AEMark.h">
+      <Filter>Mark</Filter>
+    </ClInclude>
+    <ClInclude Include="mark\3DSMax.h">
+      <Filter>Mark</Filter>
+    </ClInclude>
+    <ClInclude Include="mark\OfficeWordMark.h">
+      <Filter>Mark</Filter>
+    </ClInclude>
+    <ClInclude Include="mark\OfficeExcelMark.h">
+      <Filter>Mark</Filter>
+    </ClInclude>
+    <ClInclude Include="mark\OfficePowerPointMark.h">
+      <Filter>Mark</Filter>
+    </ClInclude>
+    <ClInclude Include="mark\ChromeMark.h">
+      <Filter>Mark</Filter>
+    </ClInclude>
+    <ClInclude Include="mark\PremiereMark.h">
+      <Filter>Mark</Filter>
+    </ClInclude>
+    <ClInclude Include="mark\WinrarZipMark.h">
+      <Filter>Mark</Filter>
+    </ClInclude>
+    <ClInclude Include="mark\PDFMark.h">
+      <Filter>Mark</Filter>
+    </ClInclude>
+    <ClInclude Include="mark\3DSMaxWhale.h">
+      <Filter>Mark</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\ResultDetailUI.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="DataType\BenchMarkStruct.h">
+      <Filter>DataType</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\MainTabUI.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\WorkMark.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="mark\AutoCADMark.h">
+      <Filter>Mark</Filter>
+    </ClInclude>
+    <ClInclude Include="mark\AdobeRegisterWindow.h">
+      <Filter>Mark</Filter>
+    </ClInclude>
+    <ClInclude Include="mark\OfficeRegisterWindow.h">
+      <Filter>Mark</Filter>
+    </ClInclude>
+    <ClInclude Include="mark\ResultReport.h">
+      <Filter>Mark</Filter>
+    </ClInclude>
+    <ClInclude Include="mark\OutlookMark.h">
+      <Filter>Mark</Filter>
+    </ClInclude>
+    <ClInclude Include="mark\CounterContent.h">
+      <Filter>Mark</Filter>
+    </ClInclude>
+    <ClInclude Include="mark\Opids.h">
+      <Filter>Mark</Filter>
+    </ClInclude>
+    <ClInclude Include="mark\Word_Opids.h">
+      <Filter>Mark</Filter>
+    </ClInclude>
+    <ClInclude Include="mark\Excel_Opids.h">
+      <Filter>Mark</Filter>
+    </ClInclude>
+    <ClInclude Include="mark\PPT_Opids.h">
+      <Filter>Mark</Filter>
+    </ClInclude>
+    <ClInclude Include="mark\PhotoShop_Opids.h">
+      <Filter>Mark</Filter>
+    </ClInclude>
+    <ClInclude Include="mark\Photoshop.h">
+      <Filter>Mark</Filter>
+    </ClInclude>
+    <ClInclude Include="mark\AutoCAD_Opids.h">
+      <Filter>Mark</Filter>
+    </ClInclude>
+    <ClInclude Include="mark\Chrome_Opids.h">
+      <Filter>Mark</Filter>
+    </ClInclude>
+    <ClInclude Include="mark\Outlook_Opids.h">
+      <Filter>Mark</Filter>
+    </ClInclude>
+    <ClInclude Include="mark\PDF_Opids.h">
+      <Filter>Mark</Filter>
+    </ClInclude>
+    <ClInclude Include="mark\Winrar_Opids.h">
+      <Filter>Mark</Filter>
+    </ClInclude>
+    <ClInclude Include="mark\3DSMaxWhale_Opids.h">
+      <Filter>Mark</Filter>
+    </ClInclude>
+    <ClInclude Include="mark\AE_Opids.h">
+      <Filter>Mark</Filter>
+    </ClInclude>
+    <ClInclude Include="mark\HandBrake_Opids.h">
+      <Filter>Mark</Filter>
+    </ClInclude>
+    <ClInclude Include="mark\Premiere_Opids.h">
+      <Filter>Mark</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\ResourceVerify.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="platform\CIni.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="platform\InformationTrace.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="platform\MyDownload.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="platform\PlatformGlobalFunc.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="platform\PlatromPaint.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="BenchMark.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="BenchMarkDlg.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="mark\MarkObject.cpp">
+      <Filter>Mark</Filter>
+    </ClCompile>
+    <ClCompile Include="mark\HandBrake.cpp">
+      <Filter>Mark</Filter>
+    </ClCompile>
+    <ClCompile Include="mark\AEMark.cpp">
+      <Filter>Mark</Filter>
+    </ClCompile>
+    <ClCompile Include="mark\3DSMax.cpp">
+      <Filter>Mark</Filter>
+    </ClCompile>
+    <ClCompile Include="mark\OfficeWordMark.cpp">
+      <Filter>Mark</Filter>
+    </ClCompile>
+    <ClCompile Include="mark\OfficeExcelMark.cpp">
+      <Filter>Mark</Filter>
+    </ClCompile>
+    <ClCompile Include="mark\OfficePowerPointMark.cpp">
+      <Filter>Mark</Filter>
+    </ClCompile>
+    <ClCompile Include="mark\ChromeMark.cpp">
+      <Filter>Mark</Filter>
+    </ClCompile>
+    <ClCompile Include="mark\PremiereMark.cpp">
+      <Filter>Mark</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\ComputerInformation.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="mark\WinrarZipMark.cpp">
+      <Filter>Mark</Filter>
+    </ClCompile>
+    <ClCompile Include="mark\PDFMark.cpp">
+      <Filter>Mark</Filter>
+    </ClCompile>
+    <ClCompile Include="mark\3DSMaxWhale.cpp">
+      <Filter>Mark</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\ResultDetailUI.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\MainTabUI.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\WorkMark.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="mark\AutoCADMark.cpp">
+      <Filter>Mark</Filter>
+    </ClCompile>
+    <ClCompile Include="mark\AdobeRegisterWindow.cpp">
+      <Filter>Mark</Filter>
+    </ClCompile>
+    <ClCompile Include="mark\OfficeRegisterWindow.cpp">
+      <Filter>Mark</Filter>
+    </ClCompile>
+    <ClCompile Include="mark\ResultReport.cpp">
+      <Filter>Mark</Filter>
+    </ClCompile>
+    <ClCompile Include="mark\OutlookMark.cpp">
+      <Filter>Mark</Filter>
+    </ClCompile>
+    <ClCompile Include="mark\CounterContent.cpp">
+      <Filter>Mark</Filter>
+    </ClCompile>
+    <ClCompile Include="mark\Opids.cpp">
+      <Filter>Mark</Filter>
+    </ClCompile>
+    <ClCompile Include="mark\Word_Opids.cpp">
+      <Filter>Mark</Filter>
+    </ClCompile>
+    <ClCompile Include="mark\Excel_Opids.cpp">
+      <Filter>Mark</Filter>
+    </ClCompile>
+    <ClCompile Include="mark\PPT_Opids.cpp">
+      <Filter>Mark</Filter>
+    </ClCompile>
+    <ClCompile Include="mark\PhotoShop_Opids.cpp">
+      <Filter>Mark</Filter>
+    </ClCompile>
+    <ClCompile Include="mark\Photoshop.cpp">
+      <Filter>Mark</Filter>
+    </ClCompile>
+    <ClCompile Include="mark\AutoCAD_Opids.cpp">
+      <Filter>Mark</Filter>
+    </ClCompile>
+    <ClCompile Include="mark\Chrome_Opids.cpp">
+      <Filter>Mark</Filter>
+    </ClCompile>
+    <ClCompile Include="mark\Outlook_Opids.cpp">
+      <Filter>Mark</Filter>
+    </ClCompile>
+    <ClCompile Include="mark\PDF_Opids.cpp">
+      <Filter>Mark</Filter>
+    </ClCompile>
+    <ClCompile Include="mark\Winrar_Opids.cpp">
+      <Filter>Mark</Filter>
+    </ClCompile>
+    <ClCompile Include="mark\3DSMaxWhale_Opids.cpp">
+      <Filter>Mark</Filter>
+    </ClCompile>
+    <ClCompile Include="mark\AE_Opids.cpp">
+      <Filter>Mark</Filter>
+    </ClCompile>
+    <ClCompile Include="mark\HandBrake_Opids.cpp">
+      <Filter>Mark</Filter>
+    </ClCompile>
+    <ClCompile Include="mark\Premiere_Opids.cpp">
+      <Filter>Mark</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\ResourceVerify.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="BenchMark.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\BenchMark.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\BenchMark.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

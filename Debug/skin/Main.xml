@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="690,384" maxinfo="690,384" >
+	<Font shared="true" id="1" name="Ó×Ô²" size="23" default="true" bold="true" />
+	<Font shared="true" id="2" name="Ó×Ô²" size="35" default="true" bold="true" />
+	<Font shared="true" id="3" name="Ó×Ô²" size="36" default="true" bold="true"/>
+	<Font shared="true" id="4" name="Ó×Ô²" size="13" default="true" bold="true"/>
+	<Font shared="true" id="5" name="Ó×Ô²" size="50" default="true" bold="true"/>
+	<Font shared="true" id="6" name="Ó×Ô²" size="14" default="true" bold="true"/>
+	<Font shared="true" id="7" name="Ó×Ô²" size="20" default="true" bold="true"/>
+	<Font shared="true" id="18" name="Ó—Ô²" size="13" default="true" bold="false"/>
+	<VerticalLayout >
+		
+		<VerticalLayout name="StaticDisplay" bkimage="main\Main_background.png" visible="true" >
+		 	<HorizontalLayout pos="0,0,600,180" padding="0,70,0,0" >
+				<Option name="optionOffice" pos="0,0,180,180" padding="140,5,0,0" selected="true" selectedimage="itemPage\option_main_item_office_select.png" normalimage="itemPage\option_main_item_office_normal.png" />
+				 
+				<Option name="optionMedia" pos="0,0,180,180" padding="20,5,0,0" selected="true" selectedimage="itemPage\option_main_item_media_select.png" normalimage="itemPage\option_main_item_media_normal.png" />
+				 
+			</HorizontalLayout>		
+			<HorizontalLayout padding="10,0,0,0" width="230" height="30" >			
+				<Text text="Iterations" font="1"   textcolor="0xffE69900" width="150"/>
+				<Edit name="editNumberOfRun" text="1" font="7" Paddings="20,0,0,0" width="80"/>
+			</HorizontalLayout>
+			<HorizontalLayout  padding="10,0,0,0"width="550" height="30"  >
+				<Text text="Project Name" font="1" textcolor="0xffE69900" width="180"/>
+				<Edit name="editCSVFileName" text="1" font="7" Paddings="20,0,0,0" width="400"/>
+	 		</HorizontalLayout>
+			<HorizontalLayout   padding="40,10,0,0"  height="35">
+				<Button name="buttonItemWork" pos="0,0,130,43" padding="100,0,0,0" width="180" normalimage="main\button_main_item_work_normal.png" hotimage="main\button_main_item_work_select.png" />
+				<Button name="buttonMainExit" pos="0,0,100,43" padding="20,0,0,0" width="180" normalimage="main\button_main_close_normal.png" hotimage="main\button_main_close_select.png" />
+			</HorizontalLayout>
+					
+		</VerticalLayout>
+		
+		
+		<VerticalLayout pos="0,0,473,160" name="RunningMonitor" bkimage="file='Monitor_bg.png' " visible="false" >
+				<Text name="textVersion" padding="350,60,0,0" align="right" font="18" width="120" height="14" textcolor="0xff00A5E7" />
+			<HorizontalLayout  padding="0,0,0,0" height="25"  >
+				<Text name="buttonRunItemIndex" text="Application: " font="7" padding="20,0,0,0" width="160"  textcolor="0xff00A5E7" />
+			 	<Button name="buttonMarkTypeName" text="°ì¹«²âÊÔ" textcolor="0xff00A5E7" font="7" align="left" width="220" padding="0,0,0,0" />
+			</HorizontalLayout>
+			<HorizontalLayout    padding="0,10,0,0" height="25"   > 
+				<Text font="7" text="Iterations:"  padding="20,0,0,0" textcolor="0xff00A5E7"  width="150" />
+				<Text name="textCurrentNumberOfRun" padding="10,0,0,0"  font="7" textcolor="0xff00A5E7" width="20"  />
+				<Text text="/" font="7"  padding="1,0,0,0" textcolor="0xff00A5E7" width="20" />
+				<Text name="textTotalNumberOfRuns" padding="1,0,0,0" font="7" width="50" textcolor="0xff00A5E7"  />
+			</HorizontalLayout>
+		<HorizontalLayout pos="0,0,473,33" > 
+				<Button name="buttonMonitorStop" visible="false" pos="0,0,63,24" font="1"  textcolor="0xffffffff" pos="0,0,63,24" padding="300,0,0,0" normalimage="button_monitor_stop_select.png" hotimage="button_monitor_stop_select.png"/>
+				<Button name="buttonMonitorExit" float="true" pos="410,0,473,24" font="1"  padding="4,0,30,0" normalimage="button_monitor_exit_normal.png" hotimage="button_monitor_exit_select.png"/>	
+			</HorizontalLayout>
+				<Progress visible="false" name="progressMarkWork" pos="0,0,321,6" padding="15,10,0,10"  width="321" height="6" min="0" max="100" value="50" />
+			<Text name="textCPUUtilization" padding="120,0,0,0" font="1" text="CPUÊ¹ÓÃÂÊ" textcolor="0xFFFFFFFF" visible="false" />
+			<Text name="textCurrentWrokName" padding="120,5,0,0" font="3" text="µ±Ç°²Ù×÷Îª£º" textcolor="0xFFFFFFFF" />
+		</VerticalLayout>
+		
+	</VerticalLayout>
+</Window>

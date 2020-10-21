@@ -1,0 +1,7 @@
+本软件组成主要分为Office、上网、3D/CAD、Adobe、多媒体、以及压缩模块。
+	Office主要组成部分为Word、Excel、PPT、PDF
+	上网组成部分为网页浏览、邮件收发
+	3D/CAD为家具装修渲染、CAD制图
+	Adobe为AE、Photoshop、Premiere
+	多媒体为视频播放、视频转码
+	压缩为Winrar				

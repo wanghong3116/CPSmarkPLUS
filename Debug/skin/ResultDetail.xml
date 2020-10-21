@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window size="800,492" >
+	<VerticalLayout bkimage="resultpage\resultpage_bg.png" font="5" >
+			<Button name="buttonWaitReport" float="true" bkcolor="0xAAffffff" pos="0,0,800,492" textcolor="0xffffffff"/>
+			<HorizontalLayout pos="0,0,800,340" padding="0,80,0,0" > 
+				<Button name="buttonOfficeTime" text="512" textcolor="0xff000000" font="3" pos="190,130,400,210" padding="0,0,0,0" float="true" />
+				<Button name="buttonMediaTime" text="678" textcolor="0xff000000" font="3" pos="190,250,400,330" padding="0,0,0,0"  float="true" />
+				<Text name="textCPUName" text="512" textcolor="0xff000000" font="4" pos="500,80,800,110"  float="true" />
+				<Text name="textCPUHz" text="678" textcolor="0xff000000" font="4" pos="500,135,800,165"  float="true"  />
+				<Text name="textCPUThreadNum" text="512" textcolor="0xff000000" font="4" pos="500,190,800,220"  float="true"  />
+				<Text name="textMemory" text="678" textcolor="0xff000000" font="4" pos="500,240,800,270"   float="true" />
+				<Text name="textGPU" text="678" textcolor="0xff000000" font="4" pos="500,300,800,330"  float="true" />
+			</HorizontalLayout>
+		
+		<HorizontalLayout pos="0,0,800,80" > 
+			
+			<Button name="buttonReturnMainPage" pos="0,0,159,58" padding="155,10,0,0" bkimage="resultpage\button_result_mainpage_normal.png" hotimage="resultpage\button_result_mainpage_select.png" />
+			<Button name="buttonExit" pos="0,0,159,58" padding="155,10,0,0" bkimage="resultpage\button_result_exit_normal.png" hotimage="resultpage\button_result_exit_select.png" />
+			
+		</HorizontalLayout>
+		
+	</VerticalLayout>
+	
+</Window>
