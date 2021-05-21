@@ -326,35 +326,35 @@ int CWorkMark::MarkWorkInit(std::vector<CMarkObject*>& vpMarkObject)
 	if (MyPlatform::CInformationTrace::IsInTestMode == 1)
 	{
 		m_veAppMarkRun.push_back(E_MARK_NET);
-	 }
+	}
 	else
 	{
 		m_veAppMarkRun.push_back(E_MARK_NET);
-	 	m_veAppMarkRun.push_back(E_MARK_OUTLOOK);
 		m_veAppMarkRun.push_back(E_MARK_OFFICE_POWERPOINT);
 		m_veAppMarkRun.push_back(E_MARK_OFFICE_WORD);
 		m_veAppMarkRun.push_back(E_MARK_OFFICE_EXCEL);
 		m_veAppMarkRun.push_back(E_MARK_PDF);
-		m_veAppMarkRun.push_back(E_MARK_PHOTOSHOP);
 		m_veAppMarkRun.push_back(E_MARK_WINRAR);
+		m_veAppMarkRun.push_back(E_MARK_OUTLOOK);
+		m_veAppMarkRun.push_back(E_MARK_PHOTOSHOP);
 		m_veAppMarkRun.push_back(E_MARK_CAD);
 	}
- 	if (m_bCurrentRunIsComprehensiveApplication)
+	if (m_bCurrentRunIsComprehensiveApplication)
 	{
 		if (MyPlatform::CInformationTrace::IsInTestMode == 1)
 			NewMarkObjectAndAdd(vpMarkObject, CFG_MARK_NET, (CChromeMark*)NULL, new CChrome_Opids());
 		else
 		{
 			NewMarkObjectAndAdd(vpMarkObject, CFG_MARK_NET, (CChromeMark*)NULL, new CChrome_Opids());
-			NewMarkObjectAndAdd(vpMarkObject, CFG_MARK_OUTLOOK, (COutlookMark*)NULL, new COutlook_Opids());
-			NewMarkObjectAndAdd(vpMarkObject, CFG_MARK_OFFICE_EXCEL, (COfficeExcelMark*)NULL, new CExcel_Opids());
 			NewMarkObjectAndAdd(vpMarkObject, CFG_MARK_OFFICE_POWERPOINT, (COfficePowerPointMark*)NULL, new CPPT_Opids());
 			NewMarkObjectAndAdd(vpMarkObject, CFG_MARK_OFFICE_WORD, (COfficeWordMark*)NULL, new CWord_Opids());
-			//NewMarkObjectAndAdd(vpMarkObject, CFG_MARK_OPNCL, (COpenCLMark*)NULL);
+			NewMarkObjectAndAdd(vpMarkObject, CFG_MARK_OFFICE_EXCEL, (COfficeExcelMark*)NULL, new CExcel_Opids());
 			NewMarkObjectAndAdd(vpMarkObject, CFG_MARK_PDF, (CPDFMark*)NULL, new CPDF_Opids());
+			NewMarkObjectAndAdd(vpMarkObject, CFG_MARK_WINRAR, (CWinrarZipMark*)NULL, new CWinrar_Opids());
+			NewMarkObjectAndAdd(vpMarkObject, CFG_MARK_OUTLOOK, (COutlookMark*)NULL, new COutlook_Opids());
+			//NewMarkObjectAndAdd(vpMarkObject, CFG_MARK_OPNCL, (COpenCLMark*)NULL);
 			NewMarkObjectAndAdd(vpMarkObject, CFG_MARK_PHOTOSHOP, (CPhotoshopMark*)NULL, new CPhotoShop_Opids());
 			//NewMarkObjectAndAdd(vpMarkObject, CFG_MARK_VIDEOPLAYER, (CVideoPlayerMark*)NULL);
-			NewMarkObjectAndAdd(vpMarkObject, CFG_MARK_WINRAR, (CWinrarZipMark*)NULL, new CWinrar_Opids());
 			NewMarkObjectAndAdd(vpMarkObject, CFG_MARK_CAD, (CAutoCADMark*)NULL, new CAutoCAD_Opids());
 			//NewMarkObjectAndAdd(vpMarkObject, CFG_MARK_ANTIVIRUS, (CAntiVirusMark*)NULL);
 		}
@@ -367,8 +367,8 @@ int CWorkMark::MarkWorkInit(std::vector<CMarkObject*>& vpMarkObject)
 		else
 		{
 			NewMarkObjectAndAdd(vpMarkObject, CFG_MARK_3DSMAX_WHALE, (C3DSMaxWhaleMark*)NULL, new C3DSMaxWhale_Opids());
-			NewMarkObjectAndAdd(vpMarkObject, CFG_MARK_AE, (CAEMark*)NULL, new CAE_Opids());
 			NewMarkObjectAndAdd(vpMarkObject, CFG_MARK_PREMIERE, (CPremiereMark*)NULL, new CPremiere_Opids());
+			NewMarkObjectAndAdd(vpMarkObject, CFG_MARK_AE, (CAEMark*)NULL, new CAE_Opids());
 			NewMarkObjectAndAdd(vpMarkObject, CFG_MARK_HANDBRAKE, (CHandBrakeMark*)NULL, new CHandBrake_Opids());
 		}
 		Sleep(100 * 2);

@@ -372,7 +372,7 @@ void CMainTabUI::OnNotifyWindowInit()
 	TCHAR version[_MAX_PATH] = { 0 };
 	g_ini.GetString(CFG_SETTING, CFG_SETTING_PROJECT_VERSION, version, _MAX_PATH, _T("1.0"));
 	GetWindowRect(GetHWND(), m_rectWindowNormal);
-	m_ptextVersion->SetText(std::tstring(_T("ver: ")).append(version).c_str());
+	m_ptextVersion->SetText(std::tstring(_T("ver: PLUS")).c_str());
 	VerifyIsRunComprehensiveCalculation();
 	if (!m_StartupRunFromUI)
 	{
